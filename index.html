@@ -81,24 +81,24 @@
       <div class="container"> 
         <div class="row g-0"> 
           <div class="col-lg-4">
-            <div class="about__form p-lg-5 px-3 py-5 main-bg h-100 d-flex flex-column justify-content-center"> 
-              <h2 class="about__form-title mb-4 text-uppercase">BOOK YOUR TABLE</h2>
+            <div class="main__form p-lg-5 px-3 py-5 main-bg h-100 d-flex flex-column justify-content-center"> 
+              <h2 class="main__form-title mb-4 text-uppercase">BOOK YOUR TABLE</h2>
               <form action="#" method="">
-                <input class="border w-100 mb-3 px-3 py-2 form-control" type="text" placeholder="Name">
-                <input class="border w-100 mb-3 px-3 py-2 form-control" type="email" placeholder="Email">
-                <input class="border w-100 mb-3 px-3 py-2 form-control" type="tel" placeholder="Phone">
+                <input class="border w-100 mb-3 px-3 py-2 form-control" id="cname" type="text" placeholder="Name" name="name">
+                <input class="border w-100 mb-3 px-3 py-2 form-control" id="cemail" type="email" placeholder="Email" name="email">
+                <input class="border w-100 mb-3 px-3 py-2 form-control" id="cphone" type="tel" placeholder="Phone" name="phone">
                 <div class="form-group">
-                  <label for="date"> <span class="about__from-icon"><i class="fa fa-calendar" aria-hidden="true"></i></span></label>
-                  <input class="border w-100 mb-3 px-3 py-2 form-control" type="date" placeholder="MM/DD/YYYY" id="date">
+                  <label for="date"> <span class="main__from-icon"><i class="fa fa-calendar" aria-hidden="true"></i></span></label>
+                  <input class="border w-100 mb-3 px-3 py-2 form-control" type="date" id="date" name="date">
                 </div>
                 <div class="form-group">
-                  <label for="time"> <span class="about__from-icon"><i class="fa fa-clock" aria-hidden="true"></i></span></label>
-                  <input class="border w-100 mb-3 px-3 py-2 form-control" type="time" value="13:00" step="900" id="time">
+                  <label for="time"> <span class="main__from-icon"><i class="fa fa-clock" aria-hidden="true"></i></span></label>
+                  <input class="border w-100 mb-3 px-3 py-2 form-control" type="time" value="13:00" step="900" id="time" name="time">
                 </div>
                 <div class="form-group">
-                  <label for="guest"> <span class="about__from-icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></label>
-                  <select class="form-select w-100 mb-3 px-3 py-2" id="guest">
-                    <option selected>Guest</option>
+                  <label for="guest"> <span class="main__from-icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></label>
+                  <select class="form-select w-100 mb-3 px-3 py-2" id="guest" name="select">
+                    <option selected disabled>Guest</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -106,7 +106,7 @@
                     <option value="5">5</option>
                   </select>
                 </div>
-                <button class="btn about__form-btn w-100 py-3" type="submit">Book Your Table Now</button>
+                <button class="btn main__form-btn w-100 py-3" type="submit">Book Your Table Now</button>
               </form>
             </div>
             <!-- End Form About-->
@@ -554,7 +554,7 @@
     <!-- Copy Right-->
     <div class="copy-right py-3">
       <div class="container"> 
-        <p class="text-center">Copyright &copy;2022 All rights reserved | This template is made with  by EraaSoft</p>
+        <p class="text-center">Copyright &copy; <span id="copy-date">  </span>All rights reserved | This template is made with  by EraaSoft</p>
       </div>
     </div>
     <script src="content/js/vendor/jquery-3.6.0.min.js"> </script>
@@ -564,5 +564,6 @@
     <script src="content/js/main.js"> </script>
     <script src="content/js/home.js"> </script>
     <script src="content/js/slider-cosumers.js"> </script>
+    <script src="content/js/date.js"> </script>
   </body>
 </html>
