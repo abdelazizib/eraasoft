@@ -25,10 +25,10 @@
             <div class="col-lg-6">
               <div class="upper-nav__shochail d-flex justify-content-lg-end align-items-center"><span class="me-2">Mon - Fri / 9:00-21:00, Sat - Sun / 10:00-20:00</span>
                 <ul class="upper-nav__icons d-flex align-items-center">
-                  <li> <a class="upper-nav__icon" href="#" aria-hidden="true"> <i class="fab fa-facebook-f" aria-hidden="true"> </i></a></li>
-                  <li> <a class="upper-nav__icon" href="#" aria-hidden="true"> <i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                  <li> <a class="upper-nav__icon" href="#" aria-hidden="true"> <i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                  <li> <a class="upper-nav__icon" href="#" aria-hidden="true"> <i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+                  <li><a class="upper-nav__icon" href="#" aria-hidden="true"> <i class="fab fa-facebook-f" aria-hidden="true"> </i></a></li>
+                  <li><a class="upper-nav__icon" href="#" aria-hidden="true"> <i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a class="upper-nav__icon" href="#" aria-hidden="true"> <i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a class="upper-nav__icon" href="#" aria-hidden="true"> <i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -43,14 +43,14 @@
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar__btn-toggle text-uppercase">Menu</span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item active"><a class="nav-link text-uppercase" href="index.html">Home </a></li>
-                <li class="nav-item"><a class="nav-link text-uppercase" href="about.html">About</a></li>
+                <li class="nav-item active"> <a class="nav-link text-uppercase" href="index.html">Home </a></li>
+                <li class="nav-item"> <a class="nav-link text-uppercase" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link text-uppercase" href="chef.html">Chef</a></li>
-                <li class="nav-item"><a class="nav-link text-uppercase" href="menu.html">Menu</a></li>
-                <li class="nav-item"><a class="nav-link text-uppercase" href="reservation.html">Reservation</a></li>
-                <li class="nav-item"><a class="nav-link text-uppercase" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link text-uppercase" href="index-rtl.html">AR</a></li>
+                <li class="nav-item"> <a class="nav-link text-uppercase" href="menu.html">Menu</a></li>
+                <li class="nav-item"> <a class="nav-link text-uppercase" href="reservation.html">Reservation</a></li>
+                <li class="nav-item"> <a class="nav-link text-uppercase" href="blog.html">Blog</a></li>
+                <li class="nav-item"> <a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
+                <li class="nav-item"> <a class="nav-link text-uppercase" href="index-rtl.html">AR</a></li>
               </ul>
             </div>
           </div>
@@ -267,33 +267,39 @@
       <div class="main__form p-5 main-bg h-100 d-flex flex-column justify-content-center"> 
         <div class="container">
           <h4 class="main__form-title mb-4 text-uppercase">BOOK YOUR TABLE</h4>
-          <form action="#" method="">
+          <form class="cmxform" id="main-form" method="get" action="">
             <div class="row"> 
               <div class="col-lg-4 col-md-6">
-                <input class="border w-100 mb-3 px-3 py-2 form-control" type="text" placeholder="Name">
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <input class="border w-100 mb-3 px-3 py-2 form-control" type="email" placeholder="Email">
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <input class="border w-100 mb-3 px-3 py-2 form-control" type="tel" placeholder="Phone">
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="form-group">
-                  <label for="date"> <span class="main__from-icon"><i class="fa fa-calendar" aria-hidden="true"></i></span></label>
-                  <input class="border w-100 mb-3 px-3 py-2 form-control" type="date" placeholder="MM/DD/YYYY" id="date">
+                <div class="form-group wow animate__fadeInDown" data-wow-duration=".8s">
+                  <input class="border w-100 mb-3 px-3 py-2 form-control" id="cname" type="text" placeholder="Name" name="name" minlength="2" required>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
-                <div class="form-group">
-                  <label for="time"> <span class="main__from-icon"><i class="fa fa-clock" aria-hidden="true"></i></span></label>
-                  <input class="border w-100 mb-3 px-3 py-2 form-control" type="time" value="13:00" step="900" id="time">
+                <div class="form-group wow animate__fadeInDown" data-wow-duration="1.2s">
+                  <input class="border w-100 mb-3 px-3 py-2 form-control" id="cemail" type="email" placeholder="Email" name="email" required>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
-                <div class="form-group">
-                  <label for="guest"> <span class="main__from-icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></label>
-                  <select class="form-select w-100 mb-3 px-3 py-2" id="guest">
+                <div class="form-group wow animate__fadeInDown" data-wow-duration="1.5s">
+                  <input class="border w-100 mb-3 px-3 py-2 form-control" id="cphone" type="tel" placeholder="Phone" name="phone" required>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="form-group wow animate__fadeInDown" data-wow-duration="1.8s">
+                  <label for="cdate"> <span class="main__from-icon"><i class="fa fa-calendar" aria-hidden="true"></i></span></label>
+                  <input class="border w-100 mb-3 px-3 py-2 form-control" type="date" id="cdate" name="date" required>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="form-group wow animate__fadeInDown" data-wow-duration="2s">
+                  <label for=""> <span class="main__from-icon"><i class="fa fa-clock" aria-hidden="true"></i></span></label>
+                  <input class="border w-100 mb-3 px-3 py-2 form-control" type="time" value="13:00" name="time">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="form-group wow animate__fadeInDown" data-wow-duration="2.3s">
+                  <label for="cguest"><span class="main__from-icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></label>
+                  <select class="form-select w-100 mb-3 px-3 py-2 wow animate__fadeInDown" id="cguest" name="select" required data-wow-duration="2.5s">
                     <option selected disabled>Guest</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -304,7 +310,7 @@
                 </div>
               </div>
               <div class="col mx-auto text-center">
-                <button class="btn main__form-btn py-3 px-lg-5" type="submit">Book Your Table Now</button>
+                <button class="btn main__form-btn py-3 px-lg-5 wow animate__fadeInDown submit" type="submit" data-wow-duration="2.5s">Book Your Table Now</button>
               </div>
             </div>
           </form>
@@ -379,9 +385,11 @@
     </div>
     <script src="content/js/vendor/jquery-3.6.0.min.js"> </script>
     <script src="content/js/vendor/bootstrap.bundle.min.js"> </script>
+    <script src="content/js/vendor/jquery.validate.min.js"></script>
     <script src="content/js/vendor/owl.carousel.min.js"> </script>
+    <script src="content/js/vendor/wow.min.js"></script>
     <script src="content/js/vendor/all.min.js"> </script>
     <script src="content/js/main.js"> </script>
-    <script src="content/js/date.js"> </script>
+    <script src="content/js/main-form.js"> </script>
   </body>
 </html>

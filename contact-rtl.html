@@ -92,12 +92,22 @@
             </div>
             <div class="col-md-6 mb-4"> 
               <h4 class="mb-4">Contact Us</h4>
-              <form action="#">
-                <input class="form-control border mb-3 p-3" type="text" placeholder="Your Name">
-                <input class="form-control border mb-3 p-3" type="email" placeholder="Your Email">
-                <input class="form-control border mb-3 p-3" type="text" placeholder="Your Subject">
-                <textarea class="form-control border mb-3 p-3" rows="3" placeholder="Message..."></textarea>
-                <button class="btn main-btn px-5 py-3" type="submit">Send Message</button>
+              <form class="cmxform" id="contact" method="get" action="">
+                <div class="form-group">
+                  <input class="form-control border mb-3 p-3" type="text" placeholder="Your Name" name="name" id="cname">
+                </div>
+                <div class="form-group">
+                  <input class="form-control border mb-3 p-3" type="email" placeholder="Your Email" name="email" id="cemail">
+                </div>
+                <div class="form-group">
+                  <input class="form-control border mb-3 p-3" type="text" placeholder="Your Subject" id="csubject" name="subject">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control border mb-3 p-3" rows="3" placeholder="Message..." name="message" id="cmessage"></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn main-btn px-5 py-3 submit" type="submit">Send Message</button>
+                </div>
               </form>
             </div>
           </div>
@@ -172,8 +182,11 @@
     </div>
     <script src="content/js/vendor/jquery-3.6.0.min.js"> </script>
     <script src="content/js/vendor/bootstrap.bundle.min.js"> </script>
+    <script src="content/js/vendor/jquery.validate.min.js"></script>
     <script src="content/js/vendor/owl.carousel.min.js"> </script>
+    <script src="content/js/vendor/wow.min.js"></script>
     <script src="content/js/vendor/all.min.js"> </script>
     <script src="content/js/main.js"> </script>
+    <script src="content/js/contact.js"> </script>
   </body>
 </html>
